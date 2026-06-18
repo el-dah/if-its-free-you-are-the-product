@@ -6,7 +6,7 @@
 "userMetadata":{},
 "modelName":"my-pose-model",
 "labels":[
-"Disciplinarian. (hooks)",
+"The one 'Disciplinarian.' (hooks)",
 "\"Look at me when I talk to you.\" (hooks)",
 "\"Afraid to look, but fascinated by the gaze.\" (hooks)",
 "\"Attempts to oppress our right to gaze.\" (hooks)",
@@ -52,9 +52,8 @@
 "\"Working outside the house... have we escaped it?\" (Federici)",
 "\"Ageing... losing even the minimal amount of power.\" (Federici)",
 "\"And what about children?\" (Federici)",
-"\"Can we afford gay relations?\" (Federici, 1974)",
-"Who will \"take care of us\"?",
-"\"Enjoy your freedom... buy whatever you want now.\""
+"\"Who will \"take care of us\"?"," (Federici)",
+"\"Enjoy your freedom... buy whatever you want now.\" (Federici, on society)"
 ],
 "modelSettings":
 {"posenet":
