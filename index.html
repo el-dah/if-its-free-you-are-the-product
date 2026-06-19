@@ -5,123 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>If It's Free, You're The Product</title>
 
-<div class="instruction-booklet">
-
-  <h1>Etiquette Guide / 礼仪指南</h1>
-
-  <p class="subtitle">
-    Please read all instructions carefully before beginning. / 开始之前，请仔细阅读以下说明。
-  </p>
-    
-  </p>
-
-  <h2>Instructions / 操作说明</h2>
-
- 
-
-  <ol>
-    <li>
-      <p class="en">While viewing the instructional film on the adjacent screen, follow the gestures demonstrated.</p>
-      <p class="zh">请观看旁边屏幕上的教学影片，并跟随示范动作进行练习。</p>
-    </li>
-
-    <li>
-      <p class="en">Pay close attention to the manner in which your movements generate speech on screen.</p>
-      <p class="zh">请仔细观察您的动作如何在屏幕上生成文字。</p>
-    </li>
-
-    <li>
-      <p class="en">Hold each pose for a moment and allow the text to emerge.</p>
-      <p class="zh">请保持每个姿势片刻，让文字逐渐显现。</p>
-    </li>
-
-    <li>
-      <p class="en">Observe how your gestures animate a conversation between texts, and consider your place within it, how it applies your own unique context.
- </p>
-      <p class="zh">观察你的手势如何使文本之间的对话动画化，并考虑你在其中的位置，它如何应用你自己独特的语境
-</p>
-    </li>
-
-    <li>
-      <p class="en">Consider whether you feel understood, or merely commented upon.</p>
-      <p class="zh">请思考：您感到被理解了吗？还是仅仅成为了被评论的对象？</p>
-    </li>
-
-    <li>
-      <p class="en">As you proceed, reflect upon your right to self-determination in all circumstances.</p>
-      <p class="zh">在继续操作的过程中，请思考您在任何情况下所拥有的自主决定权。</p>
-    </li>
-  </ol>
-
-  <h2>Notes to the Reader</h2>
-
-  <p class="en">
-    In your practice as a housewife today, remember that your right to exist beyond this role—whether online, at work, or elsewhere, regardless of gender—can only be the result of movements led by women before you.
-  </p>
-
-  <p class="zh">
-    在今天扮演家庭主妇这一角色时，请记住：您得以超越这一身份而存在的权利——无论是在网络空间、职场之中，还是其他领域——都来自于前人女性所推动的社会运动与抗争。
-  </p>
-
-  <h2>References</h2>
-
-  <p class="en">
-    Thoughts and excerpts derived from the writings of Silvia Federici and bell hooks. <p class="en">
-For more information about the close reading methodology that informed this work, including the selection and arrangement of quotations, please visit:
-</p>
-
-  </p>
-
-  <p class="zh">
-    本作品中的思想与引文节选自西尔维娅·费代里奇（Silvia Federici）与贝尔·胡克斯（bell hooks）的著作。如欲进一步了解本作品所采用的细读方法，以及引文的选择与编排方式，请访问：
-  </p>
-<p>
-<a href="https://yourwebsite.com">
-  ima-low-res-thesis.cargo.site
-</a>
- (or use the QR code next to you / 或者使用你旁边的二维码)
-</p>
-  <blockquote>
-   <p>
-
-   </p>
-    <p class="en">
-      “Male fantasies, male fantasies, is everything run by male fantasies? Up on a pedestal or down on your knees, it's all a male fantasy.”
-      <br>
-      — Margaret Atwood
-    </p>
-
-    <p class="zh">
-      “男性的幻想，男性的幻想，难道一切都由男性的幻想支配吗？无论被捧上神坛，还是跪伏在地，一切都不过是男性的幻想。”
-      <br>
-      —— 玛格丽特·阿特伍德
-    </p>
-  </blockquote>
-
-</div>
-<!-- <h2> a girl's identity isn't only feminine
-  a woman is not automatically mother
-  a mother is neither fully, tradwife, nor caregiver
-  she may be closest to an entrepreneur
-but all that is certain is her humanity
-a social optic lens is her best outlet </h2> -->
-
-
-  <!-- Your specific library scripts -->
+  <!-- Libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
-  
-  <!-- Link to the CSS file that styles your labels -->
+
+  <!-- Styles -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 
-  <!-- Layout containers for styling -->
+  <div class="instruction-booklet">
+
+    <h1>Welcome Home / 欢迎回家</h1>
+
+    <p class="en">
+      Make yourself comfortable.
+    </p>
+
+    <p class="zh">
+      请随意使用这个空间。
+    </p>
+
+    <p class="en">
+      You are welcome to rest, tidy the space, move the towels, prepare food, or follow the actions demonstrated on the adjacent screen.
+    </p>
+
+    <p class="zh">
+      您可以休息、整理空间、移动毛巾与水桶、准备食物，或跟随旁边屏幕中的动作。
+    </p>
+
+    <p class="en">
+      If preparing food for others or leaving food behind, please wear the gloves provided.
+    </p>
+
+    <p class="zh">
+      如果您为他人准备食物或留下食物供他人食用，请佩戴提供的手套。
+    </p>
+
+    <h2>While You're Here / 当您在这里时</h2>
+
+    <p class="en">
+      Your movements will be interpreted by a computer vision system and connected to a collection of texts.
+    </p>
+
+    <p class="zh">
+      您的动作将被计算机视觉系统解读，并与一组文本建立联系。
+    </p>
+
+    <p class="en">
+      Consider:<br>
+      Who is idealized for performing acts of care or cleaning?<br>
+      Who around you here notices your labor, and is it before or after you've left the space?<br>
+      What changes when housework is performed for an audience?<br>
+      Who benefits when everyday life becomes content?
+    </p>
+
+    <p class="zh">
+      请思考：<br>
+期望谁做家务？<br>
+
+你周围的人会注意到你的劳动，是在你离开后才注意到的吗？<br>
+
+当为观众做家务时，会有什么变化？<br>
+
+当日常生活变得满足时，谁会受益？
+    </p>
+
+    <h2>About the Texts / 关于文本</h2>
+
+    <p class="en">
+      The words that appear were written by feminist authors questioning why women are so often expected to gain recognition through care, domestic labor, and service to others.
+    </p>
+
+    <p class="en">
+      As you read, consider the growing popularity of domestic lifestyle content online and whether these reflections feel distant, contemporary, compelling, confusing, or intimate.
+    </p>
+
+    <p class="en">
+      Texts adapted from writings by Silvia Federici and bell hooks.
+    </p>
+
+<p class="zh">
+
+出现的话是由女权主义作家写的，质疑为什么女性经常通过照顾、家务劳动和为他人服务来获得认可。
+
+</p>
+
+<p class="zh">
+
+当你阅读时，考虑国内生活方式内容在网上越来越受欢迎，以及这些反思是感觉遥远的、现代的、引人注目的、令人困惑的还是亲密的。
+
+</p>
+
+<p class="zh">
+
+改编自Silvia Federici和bell hooks的著作。
+
+</p>
+
+    <a
+      class="back-button"
+      href="https://ima-low-res-thesis.cargo.site/select-(installation-version)">
+      ← Return
+    </a>
+
+  </div>
+
+  <!-- Interactive installation -->
   <div id="canvas-container"></div>
   <div id="labels-container"></div>
 
-  <!-- Your main sketch file -->
+  <!-- Main sketch -->
   <script src="sketch.js"></script>
 
 </body>
